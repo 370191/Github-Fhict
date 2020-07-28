@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    body {
+      font-family: Monospace;
+      background-color: #FFF;
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+  <script src="./liquidfun.js"></script>
+
+  <!-- testbed code !-->
+  <script src="./renderer.js"></script>
+  <script src="./three.js"></script>
+  <script src="./testbed.js"></script>
+  <script src="./utils.js"></script>
+
+  <!-- tests !-->
+  <script src="./testDamBreak.js"></script>
+  <script src="./testDrawingParticles.js"></script>
+  <script src="./testElasticParticles.js"></script>
+  <script src="./testImpulse.js"></script>
+  <script src="./testLiquidTimer.js"></script>
+  <script src="./testParticles.js"></script>
+  <script src="./testRigidParticles.js"></script>
+  <script src="./testSoup.js"></script>
+  <script src="./testSoupStirrer.js"></script>
+  <script src="./testSparky.js"></script>
+  <script src="./testSurfaceTension.js"></script>
+  <script src="./testTheoJansen.js"></script>
+  <script src="./testWaveMachine.js"></script>
+  <script src="./testevert.js"></script>
+
+</head>
+
+<body onload="initTestbed()">
+
+  <div
+    style="
+    position:absolute;
+    float:right;
+    z-index:1;
+    border:1px solid #FFF;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+    background:white">
+
+    <select id="tests" onchange="testSwitch(this.value)">
+      <option value="TestDamBreak">Dam Break</option>
+      <option value="TestDrawingParticles">Drawing Particles</option>
+      <option value="TestElasticParticles">Elastic Particles</option>
+      <option value="TestImpulse">Impulse</option>
+      <option value="TestLiquidTimer">Liquid Timer</option>
+      <option value="TestParticles">Particles</option>
+      <option value="TestRigidParticles">Rigid Particles</option>
+      <option value="TestSoup">Soup</option>
+      <option value="TestSoupStirrer">Soup Stirrer</option>
+      <option value="TestSparky">Sparky</option>
+      <option value="TestSurfaceTension">SurfaceTension</option>
+      <option value="TestTheoJansen">Theo Jansen</option>
+      <option value="TestWaveMachine">Wave Machine</option>
+      <option value="TestEvert" selected="selected">Test Evert</option>
+    </select>
+
+  </div>
+</body>
+
+</html>
