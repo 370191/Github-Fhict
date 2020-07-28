@@ -1,0 +1,12 @@
+Server.js node Leest json uit....
+
+Als die veranderingen in jason leest/ziet... dat wertkt al...
+Die verandering stuurt naar Javascrupt of client
+
+App.js is backand("database") die stuurt dingen naar de client html datading moet uidaten
+
+
+Json in variabel zet en doorstuurt naar HTML
+
+
+Json update vriewer In HTML.

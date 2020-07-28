@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <!--<script src="index.js"></script>-->
+    <title>Socket.IO data</title>
+
+<body>
+
+
+    <p id="data">A data will appear here on change</p>
+    <script>
+        var socket = io.connect('http://localhost:3000');
+        
+       
+              socket.on('notification', function (data) {
+            //var obj = JSON.parse(data);
+            //console.log(obj);
+            //document.getElementById("data").innerHTML = data.Triggers.id1;
+            console.log("doing anything really");
+            if (data.Triggers.id1 == true){
+                document.body.style.backgroundColor = "red";
+            }
+            else if (data.Triggers.id2 == true){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else{
+                document.body.style.backgroundColor = "green";  
+            }
+            
+        });
+        
+        
+    </script>
+</body>
+
+</html>
