@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.scss'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.27.0/feather.js"></script>
+</head>
+
+<body>
+    <div class="display-cover">
+        <video autoplay></video>
+        <canvas class="d-none"></canvas>
+
+        <div class="video-options">
+            <select name="" id="" class="custom-select">
+                <option value="">Select camera</option>
+            </select>
+        </div>
+
+        <img class="screenshot-image d-none" alt="">
+
+        <div class="controls">
+            <button class="btn btn-danger play" title="Play"><i data-feather="play-circle"></i></button>
+            <button class="btn btn-info pause d-none" title="Pause"><i data-feather="pause"></i></button>
+            <button class="btn btn-outline-success screenshot d-none" title="ScreenShot"><i
+                    data-feather="image"></i></button>
+        </div>
+    </div>
+
+</body>
+<script src='script.js'></script>
+</html>

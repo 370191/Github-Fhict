@@ -1,0 +1,32 @@
+<script src="print.min.js"></script>
+
+<input style="font-size:x-large" type="file" accept="image/*" onchange="loadFile(event)">
+
+<hr>
+<img style="max-width: 800px;" id="output" />
+<hr>
+
+<button style="height: 100px; width: 100px;" type="button" onclick="printJS(output.src, 'image')">
+  <p style="font-size:x-large">Print</p>
+</button>
+
+<script>
+  var loadFile = function (event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+
+    // output.onload = function () {
+    //   URL.revokeObjectURL(output.src) 
+    //   // Geheugen vrijmaken na upload maar dit heb je nodig 
+    //   //anders kan printJS niks vinden na het klikken op de Print knop.
+    // }
+
+  };
+</script>
+
+<!-- 
+  Bron voor upload en vertoon:
+  https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded/4459419#4459419 
+  Bron voor print.js:
+  https://printjs.crabbly.com/
+-->

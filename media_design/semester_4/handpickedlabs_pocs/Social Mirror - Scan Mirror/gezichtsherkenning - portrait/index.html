@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Face recognition App</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/face-api.js"></script>
+  <script type="module" src="./js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <div class="result-container">
+
+    <div class="display-cover">
+      
+      <div class="container">
+      
+        <video id="video" height="720" width="900" autoplay muted>
+          
+        </video>
+      </div>
+
+      <canvas class="d-none">
+      </canvas>
+
+      <!-- <canvas id="canvas"></canvas> -->
+      <div class="video-options">
+        <select name="" id="" class="custom-select">
+          <option value="">Select camera</option>
+        </select>
+        <div class="buttons">
+          <h2>Vink hier een checkbox <br> aan naar keuze:</h2>
+          Gezichts punten <input type="checkbox" id="btn-landmarks" checked><br>
+          Gezichtsherkenning <input type="checkbox" id="btn-detections" checked><br>
+          Emotie <input type="checkbox" id="btn-expressions" checked><br>
+      </div>
+      </div>
+      
+
+    </div>
+    <div id="emotion">Emotie</div>
+    <div id="gender">Geslacht</div>
+    <div id="age">Leeftijd</div>
+   
+  </div>
+</body>
+</html>

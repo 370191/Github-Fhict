@@ -1,0 +1,23 @@
+<script src="draw.js"></script>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+    
+
+<div onload="init()" class="container">
+    <div>
+        <canvas id="canvas" width="500" height="500">
+        </canvas>
+    </div>
+    <div>
+        <button id="save" type="button">
+            save
+        </button>
+        <input type="file" id="load" name="avatar" accept="image/png">
+    </div>
+</div>
+</body>

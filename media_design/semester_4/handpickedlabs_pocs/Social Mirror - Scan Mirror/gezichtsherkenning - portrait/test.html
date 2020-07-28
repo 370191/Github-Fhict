@@ -1,0 +1,71 @@
+<html>
+<head>
+
+<style>
+.punct
+{
+background-color:blue;
+position:absolute;
+width:2px;
+height:6px;
+}
+</style>
+
+<script type="text/javascript">
+    var cleft;
+    var ctop;
+    
+    var x=document.getElementById ('content');
+    function strop (cleft,ctop,d)
+    {
+        if (x==null) x="<div class='punct' id='"+d+"' style='top:"+ctop+"px;left:"+cleft+"px'></div>";
+        else x=x+"<div class='punct' id='"+d+"' style='top:"+ctop+"px;left:"+cleft+"px'></div>";
+    
+        document.getElementById ('content').innerHTML=x;
+    }
+    
+    function randomFromInterval(from,to)
+    {
+        return Math.floor(Math.random()*(to-from+1)+from);
+    }
+    
+    var y=130;
+    var speed = 2;
+    
+    function start ()
+    {
+        if (y!=0){
+            var a;
+            var b;
+            cleft=a;
+            ctop=b;
+            a=randomFromInterval (20,1000);
+            b=randomFromInterval (10,500);
+            strop(a,b,y);
+            y--;
+        }
+    
+        // Move existing droplets
+        for (var i=1; i<=130; i++)
+        {
+            var el = document.getElementById(i.toString());
+            if (el !== null)
+            {
+                var tp = parseInt(el.style.top) + speed + i*.0125;
+                if (tp > 500) 
+                    tp -= 500;
+                el.style.top = tp + "px";
+            }
+        }
+    
+        setTimeout (function () {start ()},10);
+    }
+    
+    </script>
+
+</head>
+<body>
+<div id='content' style='border:2px solid black; height:500px; width:1000px;'></div>
+<button onclick='start()'>Start </button>
+</body>
+</html>
