@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Random Giphy gif</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+
+</head>
+
+<body>
+
+  <audio id="blijemuziek">
+    <source src="funnymusic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="overdrevenblijemuziek">
+    <source src="funnymusicearrape.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var x = document.getElementById("blijemuziek");
+
+    function playAudio() {
+      x.loop = true
+      x.play();
+    }
+  </script>
+
+  <div id="gif-wrap"></div>
+  <button onclick="playAudio()" id="startknop">Start</button>
+</body>
+
+</html>

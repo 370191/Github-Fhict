@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram API Test</title>
+</head>
+
+<style>
+    #ig-holder {
+        display: flex-box;
+    }
+
+    #ig-holder img {
+        width: 300px;
+        margin: 10px
+    }
+</style>
+
+<body>
+
+    <script>
+        const igUrl = 'https://www.instagram.com/evert7877/?__a=1'
+
+        fetch(igUrl).then(function (response) {
+            var contentType = response.headers.get("content-type");
+            if (contentType && contentType.indexOf("application/json") !== -1) {
+                return response.json().then(function (json) {
+                    const igimages =
+                        json.
+                    graphql.
+                    user.
+                    edge_owner_to_timeline_media.
+                    edges;
+
+                    igimages.forEach(function (element) {
+                        //console.log(element.node.thumbnail_src)
+                        var theImg = document.createElement('img');
+                        theImg.src = element.node.thumbnail_src;
+
+                        document.getElementById("ig-holder").appendChild(theImg);
+                    })
+                })
+            }
+        })
+        
+    </script>
+
+<div id="ig-data">
+    
+</div>
+    <div id="ig-holder">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,470 @@
+
+.BuiendararWidget {
+    padding: 10px;
+    width: 149px;
+    max-width: 600px !important;
+    height: 236px !important;
+}
+.weerplazaWidgetradar {
+    padding: 10px;
+    width: 465px;
+    max-width: 600px !important;
+    height: 394px !important;
+}
+
+.widget-radar .col-legend table tr td {
+    font-size: 1.6rem;
+}
+
+
+.widget-title .widget-logo {
+    float: right;
+    width: 100%;
+    box-sizing: border-box;
+    width: 204px;
+    height: 50px;
+    margin-top: -7px;
+    background-image: url(/Content/Images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: ;
+    background-size: 200px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.widget-title h3 {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 41px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    display: block !important;
+    margin: 10px !important;
+    padding-top: -5px !important;
+}
+
+.weerplazaWidgetsateliet {
+    width: 465px;
+    height: 394px !important;
+    box-sizing: border-box !important;
+}
+
+.weerplazaWidgetsweerbericht {
+    width: 217px;
+    height: 196px !important;
+    box-sizing: border-box !important;
+}
+
+.weerplazaWidgetfietsweerbericht {
+    /* padding: 10px; */
+    width: 200px;
+    height: 169px !important;
+    /* border: 1px solid rgb(244, 244, 244) !important; */
+    box-sizing: border-box !important;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster%201.4.otf)
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue.otf)
+}
+
+@font-face {
+    font-family: SketchBlock;
+    src: url(../fonts/Sketch_Block.ttf)
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Bold.ttf);
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Italic.ttf);
+    font-style: italic, oblique
+}
+
+@font-face {
+    font-family: Cabin;
+    src: url(../fonts/Cabin-Regular.ttf)
+}
+
+
+.vts {
+    font-size: x-large;
+}
+
+.reveal a:not(.image) {
+    line-height: 1.3em;
+    text-decoration: underline;
+    color: #a121a1 !important
+}
+
+.reveal a:not(.image):hover {
+    text-decoration: none;
+    color: #636 !important
+}
+
+.reveal ol,
+.reveal ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 0 0 1em
+}
+
+.reveal ol,
+.reveal ul {
+    margin: 1em 0
+}
+
+.reveal ol {
+    counter-reset: li-counter;
+    list-style-type: none;
+    margin: 1em 0 0 2em;
+    padding: 0
+}
+
+.reveal ul {
+    list-style-type: none;
+    margin: 1em 0 0 2em;
+    padding: 0
+}
+
+.reveal ol>li,
+.reveal ul>li {
+    padding-left: .5em;
+    position: relative;
+    margin-bottom: 1em
+}
+
+.reveal ol>li::before {
+    counter-increment: li-counter;
+    content: counter(li-counter);
+    font-family: Cabin, sans-serif;
+    display: inline-block;
+    position: absolute;
+    margin-top: -.4em;
+    text-align: right;
+    font-size: 2em;
+    line-height: 1;
+    width: .8em;
+    left: -1em;
+    top: 50%
+}
+
+.reveal ul>li::before {
+    font-family: Cabin, sans-serif;
+    display: inline-block;
+    position: absolute;
+    margin-top: -.2em;
+    text-align: right;
+    font-size: 2em;
+    line-height: 1;
+    width: .8em;
+    left: -1em;
+    top: 50%
+}
+
+.reveal .slides section img {
+    box-shadow: none;
+    border: none
+}
+
+.reveal .slides section.background {
+    background-color: rgba(255, 255, 255, .5);
+    padding-right: 20px;
+    padding-top: 50px
+}
+
+.reveal small {
+    background: #000;
+    font-size: .5em;
+    padding: .4em;
+    color: #fff
+}
+
+body {
+    overflow: auto
+}
+
+.reveal {
+    font-family: Cabin, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -.02em
+}
+
+::selection {
+    background: #134674;
+    text-shadow: none
+}
+
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    font-family: Cabin, sans-serif;
+    font-weight: 700;
+    line-height: .9em;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    color: #fff
+}
+
+.reveal h6:hover {
+    text-decoration: underline
+}
+
+.white {
+    color: #fff
+}
+
+.black {
+    color: #000
+}
+
+.reveal pre {
+    box-shadow: none;
+    font-size: 1em;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.reveal li pre {
+    font-size: .8em
+}
+
+.reveal pre code {
+    background-color: #fff
+}
+
+.reveal .profile-image {
+    background-position: center;
+    background-size: cover;
+    margin: -.5em 1em 0;
+    border-radius: 7em;
+    height: 5.5em;
+    width: 5.5em;
+    float: left
+}
+
+.profile-chris {
+    background-image: url(../images/chris.jpg)
+}
+
+.profile-olaf {
+    background-image: url(../images/olaf.jpg)
+}
+
+.reveal .profile-luuk {
+    background-image: url(../images/luuk.jpg);
+    background-position: top
+}
+
+.reveal .quote-slide p {
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: .9em
+}
+
+.reveal table {
+    width: 100%
+}
+
+.reveal table th {
+    font-size: .6em;
+    line-height: 1.9em
+}
+
+.reveal table td,
+.reveal table th {
+    border-bottom: 1px solid #000
+}
+
+.reveal table th:first-child {
+    width: 400px;
+    padding: 8px
+}
+
+.reveal table td:first-child {
+    padding: 8px;
+    letter-spacing: 2px
+}
+
+.reveal table td {
+    font-size: .5em;
+    line-height: 1.1em;
+    text-align: left
+}
+
+.td-fill a {
+    color: #fff
+}
+
+ul.inspiration {
+    list-style: none;
+    margin: 0
+}
+
+ul.inspiration li {
+    text-align: center;
+    margin: 0
+}
+
+.reveal table td.td-fill {
+    background-color: #000;
+    padding-left: 1em
+}
+
+.left-align {
+    text-align: left
+}
+
+#git {
+    width: 100%;
+    height: 200px;
+    background-image: url(../images/Git-Logo-1788C.png);
+    background-position: center;
+    background-size: 180px;
+    background-repeat: no-repeat
+}
+
+.reveal .git-small {
+    background-image: url(../images/Git-Logo-1788C.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 2.75em;
+    margin-left: .25em
+}
+
+.reveal .live-link {
+    display: none
+}
+
+.reveal .live-link a {
+    color: #000
+}
+
+.hide {
+    display: none
+}
+
+#youtube-frame {
+    margin: auto;
+    margin-bottom: 50px
+}
+
+@media print {
+    .reveal .live-link {
+        display: block;
+        position: absolute;
+        bottom: .5em;
+        right: .5em
+    }
+}
+
+.reveal {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.reveal {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.reveal {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.reveal h1 {
+    font-size: 3.77em
+}
+
+.reveal h2 {
+    font-size: 2.11em
+}
+
+.reveal h3 {
+    font-size: 1.55em
+}
+
+.reveal h4 {
+    font-size: 1em
+}
+
+.reveal h1 {
+    font-size: 2.5em
+}
+
+.reveal video {
+    max-width: 70%
+}
+
+span.tag {
+    background: #000;
+    color: #fff;
+    padding: .1em .5em;
+    margin-right: .5em;
+    border-radius: .25em;
+    white-space: nowrap;
+    font-size: .7em;
+    vertical-align: bottom
+}
+
+.reveal ul.bullets {
+    list-style: square
+}
+
+q::after,
+q::before {
+    content: ''
+}
+
+b {
+    font-weight: 700 !important
+}
+
+.reveal li[data-tag]:after {
+    content: attr(data-tag);
+    position: absolute;
+    left: -1.5em;
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+    white-space: nowrap;
+    transform: rotate(180deg);
+    top: 1em;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.brushups {
+    text-align: center
+}
+
+.brushups a {
+    display: block;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    font-size: .75em;
+    text-align: left;
+    text-decoration: none !important
+}
+
+.brushups a:hover {
+    background-color: #000;
+    color: #fff
+}
