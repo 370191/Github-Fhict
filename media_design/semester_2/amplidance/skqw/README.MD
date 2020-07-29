@@ -1,15 +1,14 @@
 # SKQW - A cross-platform audio visualizer built on Electron
-Omdat wij onze geluidsgolven wilden gaan visualiseren ging ik op internet kijken naar een oplossing of een omgeving waar dit makkelijk in kon. Toen ondekte ik SKQW wat door Michael Bromley is ontwikkeld waarbij hij geinspireerd was door WinAmp.
+Because we wanted to visualize our sound waves, I went online to look for a solution or an environment where this could easily be done. Then I discovered SKQW which was developed by Michael Bromley inspired by WinAmp.
 
-Electron laad je javascript bestand in en laat het zien in de app.
+Electron load your javascript file and show it in the app.
 
 
-## Hoe te gebruiken
-Download eerst de software van [https://github.com/michaelbromley/skqw/releases](https://github.com/michaelbromley/skqw/releases) 
-Vervolgens pak je het uit...
+## How to use
+First download the software from [https://github.com/michaelbromley/skqw/releases](https://github.com/michaelbromley/skqw/releases) 
+Then you unpack it ...
 
-Ik zet mijn ontwerpjes in -> \SKQW\app-1.0.0-beta2\resources\app\library
-Als het goed is kun je mijn .js bestanden in een map plaatsen en in de library directory plaatsen.
-
+I put my designs inside the folder -> \SKQW\app-1.0.0-beta2\resources\app\library
+If everything works properly then you can place my .js files in an folder inside the library directory.
 ## How to begin
 [http://michaelbromley.github.io/skqw/developer-guide-getting-started/](http://michaelbromley.github.io/skqw/developer-guide-getting-started/)
