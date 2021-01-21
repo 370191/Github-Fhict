@@ -4,7 +4,7 @@
   "description": "node-and-socket-example\r =======================",
   "main": "server.js",
   "dependencies": {
-    "socket.io": "^1.7.2"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {},
   "scripts": {
